@@ -1,0 +1,5 @@
+x=input("enter a string:")
+y=input("enter which charcter you want to replace:")
+z=input("enter the charcter with which you want to replace:")
+p=x.replace(y,z)
+print(p)
