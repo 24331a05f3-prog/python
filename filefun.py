@@ -11,7 +11,7 @@ try:
     temp3=srcfile.read()
     print(temp3)
 
-    destfile=open("writeto.txt","w")
+    destfile=open("writeto.txt","a")
     destfile.flush()
 except FileNotFoundError:
     print("file doesn't exist on Disk!")
