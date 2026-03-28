@@ -1,0 +1,13 @@
+import tkinter as tk
+r = tk.Tk()
+r.geometry("250x150")
+f1 = tk.Frame(r)
+f1.pack()
+tk.Label(f1, text="Pack", bg="red", fg="white").pack(side="left")
+f2 = tk.Frame(r)
+f2.pack()
+tk.Label(f2, text="Grid", bg="green", fg="white").grid(row=0, column=0)
+f3 = tk.Frame(r, width=200, height=50, bg="yellow")
+f3.pack()
+tk.Label(f3, text="Place", bg="blue", fg="white").place(x=80, y=10)
+r.mainloop()

@@ -1,0 +1,13 @@
+from tkinter import * 
+root = Tk() 
+root.title("Simple GUI") 
+Label(root,text="select gender").pack() 
+g = IntVar()   
+Radiobutton(root, text="Male", variable=g, value=1).pack() 
+Radiobutton(root, text="Female", variable=g, value=2).pack() 
+Label(root,text="hobby").pack() 
+c1 = IntVar() 
+c2 = IntVar() 
+Checkbutton(root, text="Reading", variable=c1).pack() 
+Checkbutton(root, text="Music", variable=c2).pack() 
+root.mainloop() 
